@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import Header from "./Components/Header"
 import ImageGrid from "./Components/ImageGrid"
+import Footer from "./Components/Footer"
 
 function App() {
   const [images,setImages] = useState([])
@@ -30,6 +31,7 @@ function App() {
     <>
       <Header onSearch={searchImage}/>
       <ImageGrid images={images} />
+      <Footer />
     </>
   )
 }
