@@ -5,7 +5,7 @@ const ImageGrid = ({images}) => {
 
   return (
     <div>
-      <div className="p-2 lg:flex overflow-hidden flex-wrap lg:mx-28">
+      <div className="p-2 lg:flex md:flex overflow-hidden flex-wrap lg:mx-28">
       {images && images.length > 0 ? (
       images.map((image) => (
         <div key={image.id} className="p-2 mx-4 shadow-2xl rounded-md from-slate-950 mt-4">

@@ -11,11 +11,11 @@ const Header = ({ onSearch }) => {
     };
 
     return (
-        <div className='p-4 lg:flex shadow-2xl from-slate-950'>
+        <div className='p-4 lg:flex md:flex shadow-2xl from-slate-950'>
             <h1 className='mx-20 lg:mx-32 font-bold text-2xl p-2'>
                 ImageHunter
             </h1>
-            <form className='text-center lg:mx-40 flex mt-4 lg:mt-0' onSubmit={handleSubmit}>
+            <form className='text-center lg:mx-40 flex mt-4 md:mt-0 lg:mt-0' onSubmit={handleSubmit}>
                 <input 
                     className='p-3 w-80 rounded-l-full bg-slate-900 text-white outline-none' 
                     type='text'

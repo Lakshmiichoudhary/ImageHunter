@@ -6,7 +6,12 @@ function App() {
   const [images,setImages] = useState([])
 
   useEffect(()=>{
-    searchImage("")
+    const storedImages = localStorage.getItem("images");
+    if (storedImages) {
+      setImages(JSON.parse(storedImages));
+    } else {
+      searchImage("");
+    }
   },[])
 
   const searchImage = async (query) => {
@@ -15,6 +20,7 @@ function App() {
         const json = await response.json()
         console.log(json)
           setImages(json.hits);
+          localStorage.setItem("images", JSON.stringify(json.hits));
       }catch(error){
         console.error("error while fetching image:",error)
       }
