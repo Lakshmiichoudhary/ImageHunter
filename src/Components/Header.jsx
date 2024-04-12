@@ -12,10 +12,10 @@ const Header = ({ onSearch }) => {
 
     return (
         <div className='p-4 lg:flex shadow-2xl from-slate-950'>
-            <h1 className='mx-20 lg:mx-12 font-bold text-2xl'>
+            <h1 className='mx-20 lg:mx-32 font-bold text-2xl'>
                 ImageHunter
             </h1>
-            <form className='text-center lg:mx-36 flex mt-4 lg:mt-0' onSubmit={handleSubmit}>
+            <form className='text-center lg:mx-44 flex mt-4 lg:mt-0' onSubmit={handleSubmit}>
                 <input 
                     className='p-3 w-80 rounded-l-full bg-slate-900 text-white' 
                     type='text'
