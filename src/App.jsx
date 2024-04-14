@@ -19,7 +19,7 @@ function App() {
       try{
         const response = await fetch(`https://pixabay.com/api/?key=43345050-ff5d45d50bdf7cc7090713bf4&q=${encodeURIComponent(query)}`)
         const json = await response.json()
-        console.log(json)
+        //console.log(json)
           setImages(json.hits);
           localStorage.setItem("images", JSON.stringify(json.hits));
       }catch(error){
